@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://github.com",
+  "homepage": "https://labu4bd/github.io/PyroSense-AI",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
