@@ -37,8 +37,8 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description, poi
 
 const BenefitsSection: React.FC = () => {
     return (
-        <section id="clients" className="py-24">
-            <SectionTitle number="3" title="Transforming Wildfire Management" />
+        <section id="benefits" className="py-24">
+            <SectionTitle number="4" title="Strategic Benefits" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <BenefitCard
                     icon={<GovernmentIcon />}

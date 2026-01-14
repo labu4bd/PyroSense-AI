@@ -12,7 +12,7 @@ const SectionTitle: React.FC<{ number: string; title: string }> = ({ number, tit
 const EnvironmentSection: React.FC = () => {
   return (
     <section id="impact" className="py-24">
-      <SectionTitle number="4" title="Environmental Impact" />
+      <SectionTitle number="5" title="Environmental Impact" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="text-brand-slate text-lg space-y-4">
             <h3 className="text-2xl font-bold text-brand-lightest-slate mb-4">Enhancing Environmental Monitoring Efforts</h3>
@@ -27,7 +27,7 @@ const EnvironmentSection: React.FC = () => {
             <img 
                 src="https://picsum.photos/seed/greenearth/600/400" 
                 alt="Lush green forest from above" 
-                className="rounded-lg shadow-2xl w-full h-auto object-cover"
+                className="rounded-lg shadow-2xl w-full h-auto object-cover border border-brand-light-navy"
             />
         </div>
       </div>

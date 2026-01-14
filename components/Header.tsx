@@ -18,21 +18,22 @@ const Header: React.FC = () => {
   const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Solution', href: '#solution' },
-    { name: 'Clients', href: '#clients' },
+    { name: 'Alerts', href: '#alerts' },
+    { name: 'Benefits', href: '#benefits' },
     { name: 'Impact', href: '#impact' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-brand-navy/80 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-[2000] transition-all duration-300 ${
+        isScrolled ? 'bg-brand-deep-blue/90 backdrop-blur-md shadow-lg border-b border-brand-light-navy' : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between p-4 px-6 md:px-10 lg:px-20">
         <a href="#" className="flex items-center gap-3 group">
           <Logo className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
-          <span className="text-2xl font-bold text-brand-teal font-mono">
+          <span className="text-2xl font-bold text-brand-teal font-mono tracking-tight">
             PyroSense AI
           </span>
         </a>
@@ -41,7 +42,7 @@ const Header: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-brand-lightest-slate hover:text-brand-teal transition-colors duration-300 font-mono"
+              className="text-brand-lightest-slate hover:text-brand-teal transition-colors duration-300 font-mono text-sm"
             >
               <span className="text-brand-teal mr-1">0{index + 1}.</span>
               {link.name}
